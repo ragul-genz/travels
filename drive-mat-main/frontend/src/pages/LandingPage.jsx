@@ -10,9 +10,9 @@ const LandingPage = () => {
   const y1 = useTransform(scrollY, [0, 1000], [0, 200]);
   const y2 = useTransform(scrollY, [0, 1000], [0, -100]);
 
-  const phoneNumber = '8754428775';
+  const phoneNumber = '8754429775';
   const phoneNumber2 = '6382392516';
-  const waNumber = '918754428775';
+  const waNumber = '918754429775';
 
   useEffect(() => {
     const handleScroll = () => {

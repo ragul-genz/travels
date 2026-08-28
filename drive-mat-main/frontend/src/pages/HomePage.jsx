@@ -4,8 +4,8 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
 const HomePage = () => {
-  const phoneNumber = '8754428775';
-  const waNumber = '918754428775';
+  const phoneNumber = '8754429775';
+  const waNumber = '918754429775';
 
   const fadeUp = {
     hidden: { opacity: 0, y: 30 },

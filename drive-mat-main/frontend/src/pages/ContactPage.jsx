@@ -3,9 +3,9 @@ import { PhoneCall, MessageCircle, MapPin } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const ContactPage = () => {
-  const phoneNumber = '8754428775';
+  const phoneNumber = '8754429775';
   const phoneNumber2 = '6382392516';
-  const waNumber = '918754428775';
+  const waNumber = '918754429775';
 
   return (
     <div style={{ paddingTop: '8rem', minHeight: '60vh' }}>

@@ -3,9 +3,9 @@ import { Car, PhoneCall, MessageCircle, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
-  const phoneNumber = '8754428775';
+  const phoneNumber = '8754429775';
   const phoneNumber2 = '6382392516';
-  const waNumber = '918754428775';
+  const waNumber = '918754429775';
 
   return (
     <footer className="footer">
