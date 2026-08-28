@@ -60,6 +60,7 @@ const Footer = () => {
       </div>
       <div className="footer-bottom">
         <p>&copy; {new Date().getFullYear()} Go Cabz. All rights reserved.</p>
+        <p style={{ marginTop: '0.5rem', fontSize: '0.875rem', color: 'rgba(255, 255, 255, 0.5)' }}>Developed by : GenZ Neural X &amp; Win Tech</p>
       </div>
     </footer>
   );
