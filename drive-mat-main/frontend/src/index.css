@@ -27,6 +27,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -35,6 +36,7 @@ body {
   color: var(--text-main);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -290,8 +292,9 @@ h1, h2, h3, h4, h5, h6 {
   text-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
 
-.hero-title span {
-  color: #38BDF8; /* Slightly brighter blue for dark bg */
+.hero-title .hero-highlight {
+  color: #38BDF8;
+  text-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
 }
 
 .hero-subtitle {
@@ -932,8 +935,9 @@ td { padding: 1rem 1.25rem; border-bottom: 1px solid var(--border); vertical-ali
   
   /* Modals */
   .modal-content, .receipt-modal {
-    width: 90%;
-    margin: 0 1rem;
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
     max-height: 90vh;
     overflow-y: auto;
   }
@@ -980,7 +984,7 @@ td { padding: 1rem 1.25rem; border-bottom: 1px solid var(--border); vertical-ali
   .section {
     padding: 4rem 1.5rem;
   }
-  .about-content, .services-wrapper, .footer-grid {
+  .about-section .about-content, .services-wrapper, .footer-grid {
     grid-template-columns: 1fr;
     gap: 3rem;
   }

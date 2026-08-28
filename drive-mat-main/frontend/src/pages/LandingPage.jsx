@@ -63,7 +63,7 @@ const LandingPage = () => {
           variants={staggerContainer}
         >
           <motion.h1 variants={fadeUp} className="hero-title">
-            The Ultimate <span className="text-gradient">Travel</span> Experience
+            The Ultimate <span className="hero-highlight">Travel</span> Experience
           </motion.h1>
           <motion.p variants={fadeUp} className="hero-subtitle">
             Experience unparalleled comfort, safety, and punctuality. From corporate travels to emergency rides, your journey matters to us.
