@@ -27,7 +27,7 @@ const AboutPage = () => {
             <h2 className="section-title">Excellence in Motion</h2>
             <p className="section-subtitle">We redefine luxury and reliability in every journey.</p>
             <p className="about-desc">
-              With years of experience in premium chauffeur and transport services, GO CABS ensures that every ride is not just a journey, but an experience in unmatched comfort and absolute safety. Whether it's a quick airport transfer or a lavish wedding event, our fleet is meticulously maintained and our drivers are professionally trained to prioritize your time and peace of mind.
+              With years of experience in premium chauffeur and transport services, Go Cabz ensures that every ride is not just a journey, but an experience in unmatched comfort and absolute safety. Whether it's a quick airport transfer or a lavish wedding event, our fleet is meticulously maintained and our drivers are professionally trained to prioritize your time and peace of mind.
             </p>
             <div className="about-stats">
               <div>

@@ -43,11 +43,10 @@ const AdminLogin = () => {
             <Lock size={32} className="text-primary" />
           </div>
           <h1>Admin Access</h1>
-          <p>Secure login for GO CABS administrators</p>
+          <p>Secure login for Go Cabz administrators</p>
         </div>
         
         {error && <div className="alert alert-error">{error}</div>}
-        
         <form onSubmit={handleSubmit} className="admin-form">
           <div className="form-group input-with-icon">
             <label>Username</label>

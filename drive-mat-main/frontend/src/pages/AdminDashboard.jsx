@@ -80,9 +80,9 @@ const AdminDashboard = () => {
     <div className="admin-layout">
       {/* Sidebar */}
       <aside className="admin-sidebar">
-        <div className="sidebar-brand">
+        <div className="sidebar-logo">
           <Car size={24} className="text-primary" />
-          <span className="logo-text">GO CABS</span>
+          <span className="logo-text">Go Cabz</span>
         </div>
         <nav className="sidebar-nav">
           <a href="#" className="nav-item active"><LayoutDashboard size={20} /> Dashboard</a>
@@ -237,7 +237,8 @@ const AdminDashboard = () => {
           <div className="receipt-modal" onClick={e => e.stopPropagation()}>
             <div className="receipt-header">
               <h2>Booking Details</h2>
-              <p>GO CABS - The Ultimate Travel Experience</p>
+              <p>Go Cabz - The Ultimate Travel Experience</p>
+              <p>Thank you for choosing us!</p>
             </div>
             <div className="receipt-body">
               <div className="receipt-row">

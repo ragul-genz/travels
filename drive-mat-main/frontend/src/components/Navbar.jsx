@@ -25,7 +25,7 @@ const Navbar = () => {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <Link to="/" className="logo-container">
         <Car size={32} className="text-primary" style={{ color: 'var(--accent)' }} />
-        <span>GO CABS</span>
+        <span>Go Cabz</span>
       </Link>
       <div className="nav-links">
         <Link to="/">Home</Link>

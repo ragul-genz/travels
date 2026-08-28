@@ -13,7 +13,7 @@ const Footer = () => {
         <div className="footer-brand">
           <Link to="/" className="logo-container" style={{ color: 'white', textDecoration: 'none' }}>
             <Car size={32} className="text-primary" style={{ color: 'var(--accent)' }} />
-            <span>GO CABS</span>
+            <span>Go Cabz</span>
           </Link>
           <p>Your trusted premium travel partner. Ensuring safety, comfort, and reliability for every mile.</p>
         </div>
@@ -59,7 +59,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>&copy; {new Date().getFullYear()} GO CABS. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Go Cabz. All rights reserved.</p>
       </div>
     </footer>
   );
