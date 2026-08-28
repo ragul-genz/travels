@@ -160,7 +160,7 @@ const LandingPage = () => {
       </section>
 
       <footer id="contact" className="footer">
-        <div className="footer-grid" style={{ gridTemplateColumns: '2fr 1fr 1fr 1fr' }}>
+        <div className="footer-grid">
           <div className="footer-brand">
             <div className="logo-container">
               <Car size={32} className="text-primary" style={{ color: 'var(--accent)' }} />
