@@ -40,7 +40,7 @@ Car Type: ${formData.carType}
 Service: ${formData.serviceType}
 Luggage: ${formData.luggage}`;
 
-    const whatsappUrl = `https://wa.me/918754428775?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/918754429775?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
 
     const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
