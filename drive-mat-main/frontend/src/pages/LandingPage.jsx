@@ -10,8 +10,9 @@ const LandingPage = () => {
   const y1 = useTransform(scrollY, [0, 1000], [0, 200]);
   const y2 = useTransform(scrollY, [0, 1000], [0, -100]);
 
-  const phoneNumber = '7899120704';
-  const waNumber = '917899120704';
+  const phoneNumber = '8754428775';
+  const phoneNumber2 = '6382392516';
+  const waNumber = '918754428775';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -39,7 +40,7 @@ const LandingPage = () => {
       <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
         <a href="/" className="logo-container">
           <Car size={32} className="text-primary" style={{ color: 'var(--accent)' }} />
-          <span>Drive mat</span>
+          <span>GO CABS</span>
         </a>
         <div className="nav-links">
           <a href="#home">Home</a>
@@ -93,7 +94,7 @@ const LandingPage = () => {
             <h2 className="section-title">Excellence in Motion</h2>
             <p className="section-subtitle">We redefine luxury and reliability in every journey.</p>
             <p className="about-desc">
-              With years of experience in premium chauffeur and transport services, Drive mat ensures that every ride is not just a journey, but an experience in unmatched comfort and absolute safety. Whether it's a quick airport transfer or a lavish wedding event, our fleet is meticulously maintained and our drivers are professionally trained to prioritize your time and peace of mind.
+              With years of experience in premium chauffeur and transport services, GO CABS ensures that every ride is not just a journey, but an experience in unmatched comfort and absolute safety. Whether it's a quick airport transfer or a lavish wedding event, our fleet is meticulously maintained and our drivers are professionally trained to prioritize your time and peace of mind.
             </p>
             <div className="about-stats">
               <div>
@@ -163,7 +164,7 @@ const LandingPage = () => {
           <div className="footer-brand">
             <div className="logo-container">
               <Car size={32} className="text-primary" style={{ color: 'var(--accent)' }} />
-              <span>Drive mat</span>
+              <span>GO CABS</span>
             </div>
             <p>Your trusted premium travel partner. Ensuring safety, comfort, and reliability for every mile.</p>
           </div>
@@ -188,7 +189,12 @@ const LandingPage = () => {
             <ul className="footer-links">
               <li>
                 <a href={`tel:${phoneNumber}`} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                  <PhoneCall size={18} /> +91 7899120704
+                  <PhoneCall size={18} /> +91 87544 28775
+                </a>
+              </li>
+              <li>
+                <a href={`tel:${phoneNumber2}`} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                  <PhoneCall size={18} /> +91 63823 92516
                 </a>
               </li>
               <li>
@@ -196,11 +202,15 @@ const LandingPage = () => {
                   <MessageCircle size={18} /> WhatsApp Us
                 </a>
               </li>
+              <li style={{ marginTop: '0.5rem', display: 'flex', alignItems: 'flex-start', gap: '0.5rem', color: 'var(--text-secondary)' }}>
+                <MapPin size={18} style={{ flexShrink: 0, marginTop: '2px' }} />
+                <span>No 3 sri nivas appartment, lake view street, L H nagar, Adambakkam, Chennai 600088</span>
+              </li>
             </ul>
           </div>
         </div>
         <div className="footer-bottom">
-          <p>&copy; {new Date().getFullYear()} Drive mat. All rights reserved. Built with <Baby size={16} style={{ display: 'inline', verticalAlign: 'text-bottom', margin: '0 2px' }} />.</p>
+          <p>&copy; {new Date().getFullYear()} GO CABS. All rights reserved.</p>
         </div>
       </footer>
 

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { X, MapPin, Calendar, Clock, Car, Info } from 'lucide-react';
+import { X, MapPin, Calendar, Clock, Car, Info, Briefcase } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const BookingForm = ({ onClose }) => {
@@ -12,7 +12,8 @@ const BookingForm = ({ onClose }) => {
     date: '',
     time: '',
     carType: 'Sedan',
-    serviceType: 'Event'
+    serviceType: 'Event',
+    luggage: 'Without Luggage'
   });
   
   const [loading, setLoading] = useState(false);
@@ -25,6 +26,20 @@ const BookingForm = ({ onClose }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
+
+    const message = `New Booking Request:
+Name: ${formData.name}
+Mobile: ${formData.mobile}
+Pickup: ${formData.pickup}
+Drop: ${formData.drop}
+Date: ${formData.date}
+Time: ${formData.time}
+Car Type: ${formData.carType}
+Service: ${formData.serviceType}
+Luggage: ${formData.luggage}`;
+
+    const whatsappUrl = `https://wa.me/918754428775?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
 
     const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
     
@@ -126,10 +141,10 @@ const BookingForm = ({ onClose }) => {
                   <div className="input-wrapper">
                     <Car size={18} className="input-icon" />
                     <select name="carType" className="form-control pl-10" value={formData.carType} onChange={handleChange}>
-                      <option value="Mini">Mini (Hatchback)</option>
                       <option value="Sedan">Sedan</option>
                       <option value="SUV">SUV</option>
-                      <option value="Luxury">Luxury Premium</option>
+                      <option value="Luxury Cabs">Luxury Cabs</option>
+                      <option value="Others">Others</option>
                     </select>
                   </div>
                 </div>
@@ -143,6 +158,19 @@ const BookingForm = ({ onClose }) => {
                       <option value="Emergency">Emergency</option>
                       <option value="Corporate">Corporate</option>
                       <option value="Vacation">Vacation / Outstation</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div className="form-row">
+                <div className="form-group input-with-icon">
+                  <label>Luggage</label>
+                  <div className="input-wrapper">
+                    <Briefcase size={18} className="input-icon" />
+                    <select name="luggage" className="form-control pl-10" value={formData.luggage} onChange={handleChange}>
+                      <option value="Without Luggage">Without Luggage</option>
+                      <option value="With Luggage">With Luggage</option>
                     </select>
                   </div>
                 </div>

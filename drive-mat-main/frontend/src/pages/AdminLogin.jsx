@@ -43,7 +43,7 @@ const AdminLogin = () => {
             <Lock size={32} className="text-primary" />
           </div>
           <h1>Admin Access</h1>
-          <p>Secure login for Drive mat administrators</p>
+          <p>Secure login for GO CABS administrators</p>
         </div>
         
         {error && <div className="alert alert-error">{error}</div>}
