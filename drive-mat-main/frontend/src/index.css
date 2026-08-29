@@ -1,22 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
 :root {
-  --primary: #0A0A0A;
-  --primary-light: #1A1A1A;
-  --accent: #2563EB;
-  --accent-light: #3B82F6;
-  --accent-hover: #1D4ED8;
-  --bg-color: #F8FAFC;
-  --surface: #FFFFFF;
-  --text-main: #0F172A;
-  --text-muted: #64748B;
+  --primary: #4B4DFF;
+  --primary-light: #6D3DFF;
+  --accent: #4B4DFF;
+  --accent-light: #6D3DFF;
+  --accent-hover: #3a3cd9;
+  --bg-color: #FFFFFF;
+  --surface: #F5F5F5;
+  --text-main: #000000;
+  --text-muted: #666666;
   --border: #E2E8F0;
   
   --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-  --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --shadow-lg: 0 10px 20px rgba(75, 77, 255, 0.2);
+  --shadow-xl: 0 15px 30px rgba(75, 77, 255, 0.3);
+  --shadow-2xl: 0 25px 50px -12px rgba(75, 77, 255, 0.4);
 }
 
 * {
@@ -31,7 +31,7 @@ html {
 }
 
 body {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   background-color: var(--bg-color);
   color: var(--text-main);
   line-height: 1.6;
@@ -157,7 +157,7 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   gap: 0.5rem;
   padding: 0.875rem 1.75rem;
-  border-radius: 12px;
+  border-radius: 16px;
   font-weight: 600;
   font-size: 1rem;
   font-family: inherit;
@@ -170,36 +170,38 @@ h1, h2, h3, h4, h5, h6 {
 .btn-primary {
   background-color: var(--primary);
   color: white;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: var(--shadow-lg);
 }
 
 .btn-primary:hover {
   background-color: var(--primary-light);
-  transform: translateY(-2px);
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px) scale(0.97);
+  box-shadow: var(--shadow-xl);
 }
 
 .btn-accent {
-  background-color: var(--accent);
+  background-color: var(--primary);
   color: white;
-  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25);
+  box-shadow: var(--shadow-lg);
 }
 
 .btn-accent:hover {
-  background-color: var(--accent-hover);
-  transform: translateY(-2px);
-  box-shadow: 0 12px 25px rgba(37, 99, 235, 0.35);
+  background-color: var(--primary-light);
+  transform: translateY(-2px) scale(0.97);
+  box-shadow: var(--shadow-xl);
 }
 
 .btn-outline {
   background: transparent;
-  border: 1px solid var(--border);
+  border: 1px solid var(--primary);
   color: var(--primary);
 }
 
 .btn-outline:hover {
   border-color: var(--primary);
-  background: var(--surface);
+  background: var(--primary);
+  color: white;
+  transform: scale(0.97);
 }
 
 .btn-white {
