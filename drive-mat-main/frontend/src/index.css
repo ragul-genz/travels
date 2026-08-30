@@ -131,22 +131,26 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(0,0,0,0.03);
 }
 
+.navbar .nav-links a.btn-outline,
 .navbar .btn-outline {
   border-color: rgba(255,255,255,0.5);
   color: white;
 }
+.navbar .nav-links a.btn-outline:hover,
 .navbar .btn-outline:hover {
   background: white;
   color: var(--primary);
 }
 
+.navbar.scrolled .nav-links a.btn-outline,
 .navbar.scrolled .btn-outline {
-  background-color: var(--primary);
+  background-color: transparent;
   border-color: var(--primary);
-  color: white;
+  color: var(--primary);
 }
+.navbar.scrolled .nav-links a.btn-outline:hover,
 .navbar.scrolled .btn-outline:hover {
-  background: var(--primary-light);
+  background: var(--primary);
   color: white;
 }
 
