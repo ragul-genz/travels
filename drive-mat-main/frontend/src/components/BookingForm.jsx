@@ -206,7 +206,8 @@ Luggage: ${formData.luggage}`;
                       <option value="Event">Event</option>
                       <option value="Emergency">Emergency</option>
                       <option value="Corporate">Corporate</option>
-                      <option value="Vacation">Vacation / Outstation</option>
+                      <option value="Vacation">Vacation</option>
+                      <option value="Outstation">Outstation</option>
                     </select>
                   </div>
                 </div>

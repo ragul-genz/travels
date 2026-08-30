@@ -83,7 +83,7 @@ const LandingPage = () => {
           </motion.p>
           
           <motion.div variants={fadeUp} className="hero-actions">
-            <button className="btn btn-white btn-large" onClick={() => setIsModalOpen(true)} style={{ color: 'var(--primary)', fontWeight: 700, borderRadius: '40px', padding: '1.2rem 3rem' }}>
+            <button className="btn btn-primary btn-large" onClick={() => setIsModalOpen(true)} style={{ fontWeight: 700, borderRadius: '40px', padding: '1.2rem 3rem' }}>
               Book Your Ride <ArrowRight size={20} />
             </button>
             <div className="contact-actions">
@@ -201,14 +201,14 @@ const LandingPage = () => {
             minWidth: '350px'
           }}>
             <h3 style={{ fontSize: '2rem', color: 'white', marginBottom: '2rem' }}>Ready to experience the best?</h3>
-            <button className="btn btn-white btn-large" onClick={() => setIsModalOpen(true)} style={{ color: 'var(--primary)', width: '100%', borderRadius: '16px' }}>
+            <button className="btn btn-outline btn-large" onClick={() => setIsModalOpen(true)} style={{ color: 'white', borderColor: 'white', width: '100%', borderRadius: '16px' }}>
               Book Ride Now
             </button>
           </div>
         </motion.div>
       </section>
 
-      <footer id="contact" className="footer" style={{ background: '#111111', color: 'white', padding: '6rem 6% 2rem' }}>
+      <footer id="contact" className="footer" style={{ background: '#000080', color: 'white', padding: '6rem 6% 2rem' }}>
         <div className="footer-grid" style={{ display: 'grid', gridTemplateColumns: '2fr 1fr 1fr 1fr', gap: '4rem', marginBottom: '4rem' }}>
           <div className="footer-brand">
             <div className="logo-container" style={{ color: 'white', marginBottom: '1.5rem' }}>

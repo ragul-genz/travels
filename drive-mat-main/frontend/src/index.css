@@ -558,7 +558,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Footer */
 .footer {
-  background: var(--primary);
+  background: #000080;
   color: rgba(255,255,255,0.7);
   padding: 6rem 6% 2rem;
 }
@@ -825,6 +825,7 @@ td { padding: 1rem 1.25rem; border-bottom: 1px solid var(--border); vertical-ali
 .badge.emergency { background: #FEE2E2; color: #B91C1C; }
 .badge.corporate { background: #DBEAFE; color: #1D4ED8; }
 .badge.vacation { background: #D1FAE5; color: #047857; }
+.badge.outstation { background: #FFEDD5; color: #C2410C; }
 .badge.default { background: #F1F5F9; color: #475569; }
 
 /* Alerts */

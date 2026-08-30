@@ -65,7 +65,7 @@ const AdminDashboard = () => {
 
   const getServiceBadgeClass = (type) => {
     const t = type?.toLowerCase() || '';
-    if (['event', 'emergency', 'corporate', 'vacation'].includes(t)) {
+    if (['event', 'emergency', 'corporate', 'vacation', 'outstation'].includes(t)) {
       return `badge ${t}`;
     }
     return 'badge default';
